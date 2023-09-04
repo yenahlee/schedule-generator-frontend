@@ -49,7 +49,7 @@ export const Main = () => {
         <div>
             <TripForm setGeneratedSchedule={setGeneratedSchedule} setTripDetails={setTripDetails} saveButtonStatus={saveButtonStatus} tripDetails={tripDetails} handleTripData={handleTripData}/>
             <p>Tip: Add your preferences to generate the perfect schedule</p>
-            <p>Refresh and click the Generate button again if the schedule doesn't display properly</p>
+            <p>Click the Generate button again if the schedule doesn't display properly</p>
             <p>Login to save schedules!</p>
             
 
