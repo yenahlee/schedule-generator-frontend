@@ -20,7 +20,7 @@ export const Main = () => {
 
     const handleSaveSchedule = async () => {
         try {
-            const response = await axios.post('https://git.heroku.com/floating-sands-23715.git/add-schedules', 
+            const response = await axios.post('https://trip-generator-ae034424eb9d.herokuapp.com/add-schedule', 
                 {
                     schedule_text: generatedSchedule,
                     trip_info: tripData.prompt,

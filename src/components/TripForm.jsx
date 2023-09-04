@@ -26,7 +26,7 @@ export const TripForm = ({setGeneratedSchedule, saveButtonStatus, handleTripData
         //         'User-ID': userid
         //     }
         // })
-        axios.post('https://git.heroku.com/floating-sands-23715.git/generate-trip', tripData, {
+        axios.post('https://trip-generator-ae034424eb9d.herokuapp.com/generate-trip', tripData, {
             headers: {
                 'Content-Type': 'application/json',
                 'User-ID': userid

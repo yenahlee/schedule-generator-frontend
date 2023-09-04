@@ -18,7 +18,7 @@ export const SavedTrips = () => {
     const fetchSchedules = async () => {
         if (user) {
             try {
-                const response = await axios.get('http://127.0.0.1:5000/get-schedules', {
+                const response = await axios.get('https://trip-generator-ae034424eb9d.herokuapp.com/get-schedules', {
                     headers: {
                         'User-ID': userid
                     }
@@ -36,7 +36,7 @@ export const SavedTrips = () => {
 
     const handleDelete = async (scheduleId) => {
         try {
-            const response = await axios.delete(`https://git.heroku.com/floating-sands-23715.git/delete-schedule/${scheduleId}`, {
+            const response = await axios.delete(`https://trip-generator-ae034424eb9d.herokuapp.com/delete-schedule/${scheduleId}`, {
             headers: {
                 'User-ID': userid
             }
