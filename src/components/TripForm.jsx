@@ -45,7 +45,7 @@ export const TripForm = ({setGeneratedSchedule, saveButtonStatus, handleTripData
     
     return (
         <form className="prompt-form" onSubmit={handleSubmit} method="post">
-            <label className="form-label" htmlFor="prompt">Enter your destination and duration (up to 4 days)</label>
+            <label className="form-label" htmlFor="prompt">Enter your destination and duration (up to 4 days due to token limits)</label>
             <br/>
             <input
                 className="prompt-input"
