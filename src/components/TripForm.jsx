@@ -19,13 +19,6 @@ export const TripForm = ({setGeneratedSchedule, saveButtonStatus, handleTripData
 
         setIsGenerating(true);
 
-
-        // axios.post('http://127.0.0.1:5000/generate-trip', tripData, {
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //         'User-ID': userid
-        //     }
-        // })
         axios.post('https://trip-generator-ae034424eb9d.herokuapp.com/generate-trip', tripData, {
             headers: {
                 'Content-Type': 'application/json',
@@ -52,7 +45,7 @@ export const TripForm = ({setGeneratedSchedule, saveButtonStatus, handleTripData
     
     return (
         <form className="prompt-form" onSubmit={handleSubmit} method="post">
-            <label className="form-label" htmlFor="prompt">Enter your destination and duration</label>
+            <label className="form-label" htmlFor="prompt">Enter your destination and duration (up to 4 days)</label>
             <br/>
             <input
                 className="prompt-input"
